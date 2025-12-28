@@ -34,25 +34,31 @@ const Hero = () => {
             className="relative order-1 lg:order-2"
           >
             <div className="relative">
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-2xl opacity-50 animate-glow-pulse" />
+              {/* Outer Glow Effect */}
+              <div className="absolute inset-[-20px] bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-3xl opacity-40 animate-glow-pulse" />
+              
+              {/* Animated Gradient Ring */}
+              <div className="absolute inset-[-4px] rounded-full bg-gradient-to-r from-primary via-accent to-secondary animate-spin opacity-70" style={{ animationDuration: '8s' }} />
               
               {/* Image Container */}
               <motion.div
-                animate={{ y: [0, -15, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+                animate={{ y: [0, -12, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
                 className="relative"
               >
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 relative z-10">
-                  <img
-                    src={profileImage}
-                    alt="Chatresh Konchada"
-                    className="w-full h-full object-cover object-top"
-                  />
+                {/* Inner padding container for safe area */}
+                <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden relative z-10 bg-background/50 p-1.5 shadow-2xl shadow-primary/20">
+                  <div className="w-full h-full rounded-full overflow-hidden" style={{ aspectRatio: '1 / 1' }}>
+                    <img
+                      src={profileImage}
+                      alt="Chatresh Konchada"
+                      className="w-[110%] h-[110%] object-cover object-[center_15%] -translate-x-[5%] -translate-y-[2%]"
+                    />
+                  </div>
                 </div>
                 
-                {/* Rotating Border */}
-                <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/20 animate-spin" style={{ animationDuration: '20s' }} />
+                {/* Rotating Dashed Border */}
+                <div className="absolute inset-[-8px] rounded-full border-2 border-dashed border-primary/30 animate-spin" style={{ animationDuration: '20s' }} />
               </motion.div>
             </div>
           </motion.div>
