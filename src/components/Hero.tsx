@@ -40,21 +40,24 @@ const Hero = () => {
               {/* Animated Gradient Ring */}
               <div className="absolute inset-[-4px] rounded-full bg-gradient-to-r from-primary via-accent to-secondary animate-spin opacity-70" style={{ animationDuration: '8s' }} />
               
-              {/* Image Container */}
+              {/* Floating Container - animation only on container */}
               <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
                 className="relative"
               >
-                {/* Inner padding container for safe area */}
-                <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden relative z-10 bg-background/50 p-1.5 shadow-2xl shadow-primary/20">
-                  <div className="w-full h-full rounded-full overflow-hidden" style={{ aspectRatio: '1 / 1' }}>
-                    <img
-                      src={profileImage}
-                      alt="Chatresh Konchada"
-                      className="w-[110%] h-[110%] object-cover object-[center_15%] -translate-x-[5%] -translate-y-[2%]"
-                    />
-                  </div>
+                {/* Circular container with internal padding */}
+                <div 
+                  className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden relative z-10 bg-gradient-to-br from-background via-background/90 to-muted shadow-2xl shadow-primary/20 p-[10%] flex items-center justify-center"
+                  style={{ aspectRatio: '1 / 1' }}
+                >
+                  {/* Image - no scaling, object-fit contain */}
+                  <img
+                    src={profileImage}
+                    alt="Chatresh Konchada"
+                    className="w-full h-full object-contain rounded-full"
+                    style={{ maxWidth: '100%', maxHeight: '100%' }}
+                  />
                 </div>
                 
                 {/* Rotating Dashed Border */}
