@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, Download, ExternalLink, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import { useTypingEffect } from '@/hooks/useTypingEffect';
-import profileImage from '@/assets/profile.jpg';
+import profileImage from '@/assets/ck_profilepic.jpg';
 
 const roles = [
   'Data Science Undergraduate',
@@ -55,7 +55,7 @@ const Hero = () => {
                   <img
                     src={profileImage}
                     alt="Chatresh Konchada"
-                    className="w-full h-full object-contain rounded-full"
+                    className="w-full h-full object-contain scale-[1.30]"
                     style={{ maxWidth: '100%', maxHeight: '100%' }}
                   />
                 </div>
@@ -106,7 +106,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-muted-foreground text-lg max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
-              A passionate Computer Science student with a CGPA of 9.8/10, 
+              A passionate Computer Science student with a CGPA of 9.55/10, 
               specializing in Data Science. I transform complex problems into 
               elegant solutions through AI, Machine Learning, and clean code.
             </motion.p>

@@ -5,14 +5,14 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/ChatreshK',
+    url: 'https://github.com/Chatresh7',
     icon: Github,
     username: 'ChatreshK',
     color: 'foreground',
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/ChatreshK',
+    url: 'https://www.linkedin.com/in/chatresh-konchada-6075692aa/',
     icon: Linkedin,
     username: 'ChatreshK',
     color: 'primary',

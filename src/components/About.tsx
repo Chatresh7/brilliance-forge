@@ -6,7 +6,7 @@ const stats = [
   { label: 'Years Coding', value: 3, icon: Code, suffix: '+' },
   { label: 'Projects Built', value: 10, icon: Zap, suffix: '+' },
   { label: 'Certifications', value: 7, icon: Trophy, suffix: '' },
-  { label: 'CGPA', value: 9.8, icon: Brain, suffix: '/10', isDecimal: true },
+  { label: 'CGPA', value: 9.55, icon: Brain, suffix: '/10', isDecimal: true },
 ];
 
 const About = () => {
@@ -47,7 +47,7 @@ const About = () => {
               <p className="text-lg">
                 I'm a <span className="text-foreground font-medium">Computer Science undergraduate</span> at ANITS, 
                 specializing in Data Science. Consistently ranked in the{' '}
-                <span className="text-primary font-medium">Top 5%</span> of my class with a CGPA of 9.8/10.
+                <span className="text-primary font-medium">Top 5%</span> of my class with a CGPA of 9.55/10.
               </p>
               <p>
                 My journey in tech started with curiosity about how things work. Today, I channel that 
