@@ -21,7 +21,6 @@ const Footer = () => {
             className="flex items-center gap-2 text-muted-foreground"
           >
             <span>Built with</span>
-            <Heart size={16} className="text-primary fill-primary animate-pulse" />
             <span>by</span>
             <span className="font-display font-bold gradient-text">Chatresh Konchada</span>
           </motion.div>
