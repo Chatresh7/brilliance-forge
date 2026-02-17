@@ -20,7 +20,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex items-center gap-2 text-muted-foreground"
           >
-            <span>Built with</span>
+            <span>Built</span>
             <span>by</span>
             <span className="font-display font-bold gradient-text">Chatresh Konchada</span>
           </motion.div>
